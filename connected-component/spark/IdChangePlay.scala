@@ -14,6 +14,7 @@ object IdChangePlay extends App {
     // org id change (key type + from id), to id
 
     var counter = -1
+    var rounds = 0
     var orgIdChange = file.map {
         line =>
             val splits = line.split(" ")
@@ -41,6 +42,7 @@ object IdChangePlay extends App {
     }
 
     while (counter != 0) {
+        rounds += 1
         // init counter
         counter = 0
         // reverse id change
@@ -59,6 +61,7 @@ object IdChangePlay extends App {
 
     }
 
+    println(s"Used $rounds")
     orgIdChange.groupByKey().collect().foreach {
         p => println(s"(${p._1}, ${p._2})")
     }
