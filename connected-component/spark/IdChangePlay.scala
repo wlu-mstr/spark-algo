@@ -35,7 +35,7 @@ object IdChangePlay extends App {
         } else {
             // need transitive closure
             counter = counter + 1
-            toKs.filter { i => i != _min}.map {
+            (toKs ++ List(fromK)).filter { i => i != _min}.map {
                 i => (_min, i)
             }
         }
