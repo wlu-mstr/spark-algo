@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CC.iml" filepath="$PROJECT_DIR$/CC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spark-algo.iml" filepath="$PROJECT_DIR$/spark-algo.iml" />
     </modules>
   </component>
 </project>
